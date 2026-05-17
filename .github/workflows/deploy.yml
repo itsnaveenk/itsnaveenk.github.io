@@ -34,8 +34,6 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build
-        env:
-          GITHUB_PAGES: "true"
         run: npm run build
 
       - name: Upload artifact

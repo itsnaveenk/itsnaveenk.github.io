@@ -39,13 +39,13 @@ export const metadata: Metadata = {
   authors: [{ name: personalInfo.name, url: personalInfo.github }],
   creator: personalInfo.name,
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://itsnaveenk.github.io/portfolio"
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://itsnaveenk.github.io"
   ),
   openGraph: {
     type: "website",
     locale: "en_US",
     url:
-      process.env.NEXT_PUBLIC_SITE_URL ?? "https://itsnaveenk.github.io/portfolio",
+      process.env.NEXT_PUBLIC_SITE_URL ?? "https://itsnaveenk.github.io",
     title: `${personalInfo.name} / Backend Engineer`,
     description: personalInfo.tagline,
     siteName: `${personalInfo.name} Portfolio`,

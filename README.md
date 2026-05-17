@@ -2,7 +2,7 @@
 
 A backend-engineering-focused portfolio. Editorial monochrome aesthetic, built like a product page rather than a designer template.
 
-🌐 **Live:** [itsnaveenk.github.io/portfolio](https://itsnaveenk.github.io/portfolio)
+🌐 **Live:** [itsnaveenk.github.io](https://itsnaveenk.github.io)
 
 ## Stack
 
@@ -29,49 +29,16 @@ Visit [http://localhost:3000](http://localhost:3000).
 ## Build
 
 ```bash
-# Local production build
-npm run build
-
-# Static export for GitHub Pages
-GITHUB_PAGES=true npm run build
-# Output goes to ./out
+npm run build      # Static export to ./out
 ```
 
 ## Deploy
 
-This repo deploys automatically to GitHub Pages on every push to `main` via the workflow at `.github/workflows/deploy.yml`.
-
-To set up Pages on a fresh repo:
-
-1. Push to `main`
-2. Go to **Settings → Pages**
-3. Set **Source** to **GitHub Actions**
+The repo deploys automatically to GitHub Pages on every push to `main` via the workflow at `.github/workflows/deploy.yml`. Because the repo is named `itsnaveenk.github.io`, it serves at the root of the user page.
 
 ## Customization
 
 All content lives in `src/lib/data.ts`. Update personal info, skills, experience, and projects in one file. Replace `public/resume.pdf` with your real PDF.
-
-## Structure
-
-```
-src/
-├── app/                  # App Router (layout, page, globals)
-├── components/
-│   ├── sections/         # Hero, About, Skills, Experience, Projects, etc.
-│   ├── ui/               # Button, Badge, Section, Marquee
-│   ├── navbar.tsx
-│   ├── footer.tsx
-│   ├── command-palette.tsx
-│   ├── project-visual.tsx
-│   └── scroll-progress.tsx
-└── lib/
-    ├── data.ts           # All content
-    └── utils.ts
-public/
-├── resume.pdf
-├── robots.txt
-└── sitemap.xml
-```
 
 ## Keyboard Shortcuts
 
